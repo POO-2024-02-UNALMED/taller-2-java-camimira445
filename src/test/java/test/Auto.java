@@ -1,6 +1,6 @@
 package test;
 
-class Auto {
+public class Auto {
     String modelo;
 	int precio;
 	Asiento[] asientos;
@@ -18,7 +18,7 @@ class Auto {
 	 } 
 	  return num1;
   }
-    public String verificarIntegridad(){
+     public String verificarIntegridad(){
 		if(this.registro==this.motor.registro){
 			for(int i = 0;i<asientos.length;i++){
 				if(asientos[i] != null){
@@ -32,9 +32,5 @@ class Auto {
 			return "Las piezas no son originales";
 		}
 	  }
-			
- }
-
-
-
-
+    
+}
