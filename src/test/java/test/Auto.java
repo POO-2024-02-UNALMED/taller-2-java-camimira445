@@ -7,18 +7,18 @@ class Auto {
 	String Marca;
 	Motor motor;
 	int registro;
-	static String cantidadCreados;
+	static int cantidadCreados;
 	
    int cantidadAsientos(){
 	int num1=0;
 	for (int i =0; i<asientos.length;i++){
        if(asientos[i]!=null){
-		num1++;
-	   }
+		  num1++;
+	    }
 	 } 
 	  return num1;
-	}
-    String verificarIntegridad(){
+  }
+    public String verificarIntegridad(){
 		if(this.registro==this.motor.registro){
 			for(int i = 0;i<asientos.length;i++){
 				if(asientos[i] != null){
@@ -30,8 +30,9 @@ class Auto {
 		}
 		else{
 			return "Auto original";
-		}
-	}
+	}	
+     }
+}
 
 
 
