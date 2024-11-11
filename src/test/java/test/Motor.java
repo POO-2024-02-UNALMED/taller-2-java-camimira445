@@ -1,24 +1,22 @@
 package test;
 
-public class Motor {
+class Motor {
     int numeroCilindros;
 	String tipo;
-	int Registro;
+	int registro;
 	
 public void cambiarRegistro(int argumento) {
-    	this.Registro=argumento;
+    	this.registro=argumento;
     }
-public void asignarTipo(String argumento) {
+void asignarTipo(String tipo) {
         
 
-		if(argumento=="electrico") {
-			this.tipo=argumento;
-		}else if(argumento=="gasolina"){
-			this.tipo=argumento;
-		}else{
-			 this.tipo = tipo;
-		}
+		if(tipo=="gasolina"||tipo=="electrico") {
 		
+			 
+			this.tipo=tipo;
+	
+		}
 	}
 }
 
